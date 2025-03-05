@@ -1,0 +1,16 @@
+<h1>{{ title }}</h1>
+
+<div> Hello {{ name }}, Location at {{ location }}</div>
+
+<div> 
+  <label for="">name:</label> 
+  <input type="text" [(ngModel)]="name"> 
+</div>
+
+<div> 
+  <label for="">location:</label> 
+  <input type="text" [(ngModel)]="location"> 
+</div>
+
+
+<div><button (click)="hello()">Hello</button></div>

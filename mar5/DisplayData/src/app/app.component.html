@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+
+@for (contact of contacts;track $index) {
+  <div>
+  {{contact}}
+  </div>
+}
+
+<hr>
+<ul>
+  @for (contact of contacts;track $index) {
+    <li>{{contact}}</li>
+  }
+</ul>
+
+<hr>
+<app-contact></app-contact>

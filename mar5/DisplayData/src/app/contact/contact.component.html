@@ -1,0 +1,27 @@
+<p>contact works!</p>
+ 
+<!-- <div>{{contact.name}} -{{contact.location}}</div> -->
+<hr>
+<ul>
+    @for (contact of contacts;track $index) {
+        <li>{{contact.name}} - {{contact.location}} - {{contact.college}}</li>
+    }
+</ul>
+
+<hr>
+<table border="1">
+    <thead>
+        <th>Name</th>
+        <th>Location</th>
+        <th>College</th>
+        </thead>
+        <tbody>
+            @for (contact of contacts;track $index) {
+                <tr>
+                    <td>{{contact.name}}</td>
+                    <td>{{contact.location}}</td>
+                    <td>{{contact.college}}</td>
+                </tr>
+            }
+        </tbody>
+</table>

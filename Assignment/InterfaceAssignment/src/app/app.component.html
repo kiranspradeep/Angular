@@ -1,0 +1,19 @@
+<h2>{{title}}</h2>
+
+<table border="2">
+  <thead>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+  </thead>
+  <tbody>
+    @for (contact of Task;track $index) {
+      <tr>
+          <td>{{contact.TaskName}}</td>
+          <td>{{contact.Description}}</td>
+          <td>{{contact.Status}}</td>
+      </tr>
+    }
+  </tbody>
+  
+</table>

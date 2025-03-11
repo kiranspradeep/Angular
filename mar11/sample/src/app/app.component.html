@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+  //show as table
+  <table>
+    <thead>
+    <th>id</th>
+    <th>name</th>
+    <th>location</th>
+    </thead>
+    @for (item of contacts; track $index) {
+  <tbody (click)="onSelect(item)">
+    <td>{{item.id}}</td>
+    <td>{{item.name}}</td>
+    <td>{{item.location}}</td>
+  </tbody>
+}
+</table>
+
+
+<app-contact [contact]="selectedContact"></app-contact>

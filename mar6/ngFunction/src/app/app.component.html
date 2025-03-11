@@ -1,0 +1,14 @@
+<!-- {{traniees | json}} -->
+
+
+ <ul>
+  @for (trainee of traniees; track $index) {
+  <li (click)="onSelect(trainee)">{{trainee.name}}</li>
+  }
+ </ul>
+
+
+<hr>
+<!-- {{selectedTrainee | json}} -->
+
+<app-trainee-details [trainee]="selectedtraniee"></app-trainee-details>
